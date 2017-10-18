@@ -16,9 +16,9 @@ All connection you can find in fritzing file.
 ## Bluetooth setup
 Before starting communication between MPU6050 and PC via bluetooth you need to setup your bluetooth module. We need to make bluetooth master/slave pair with same speed. You could read more in [this article](http://electricdiylab.com/how-to-set-at-command-mode-for-hc-05-bluetooth-module/). Purposed algorithm:
 1. Install code from file to Arduino board, that will implement bluetooth setup:
-'''
+```
 sketch_bluetooth_setup.ino
-'''
+```
 2. Connect first bluetooth module to Arduino:
 - Arduino 11 pin to HC-05 Rx pin;
 - Arduino 10 pin to HC-05 Tx pin;
@@ -51,21 +51,21 @@ The bluetooth modules should automaticly connected to each other!
 
 ## Installing code to slave bluetooth
 Connect MPU6050, slave bluetooth and battery to Arduino and install slave bluetooth
-'''
+```
 sketch_bluetooth_slave.ino
-'''
+```
 
 ## Installing code to master bluetooth
 Connect master bluetooth to Arduino and connected Arduino to PC. Install master bluetooth code from file:
-'''
+```
 sketch_bluetooth_master.ino
-'''
+```
 
 ## Processing
 For visualisation and saving transfer data You need to install Processing version 3.3. Start next code in file after bluetooth have already connected to each other:
-'''
+```
 Processing_save.pde
-'''
+```
 Press space button for start saving to "data.txt" file in your home directory. Press space button to stop saving.
 
 ## Authors
