@@ -14,7 +14,7 @@ You need:
 All connection you can find in fritzing file.
 
 ## Bluetooth setup
-Before starting communication between MPU6050 and PC via bluetooth you need to setup your bluetooth module. We need to make bluetooth master/slave pair with same speed. Algorithm:
+Before starting communication between MPU6050 and PC via bluetooth you need to setup your bluetooth module. We need to make bluetooth master/slave pair with same speed. You could read more in [this article](http://electricdiylab.com/how-to-set-at-command-mode-for-hc-05-bluetooth-module/). Purposed algorithm:
 1. Install code from file to Arduino board, that will implement bluetooth setup:
 '''
 sketch_bluetooth_setup.ino
