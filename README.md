@@ -50,7 +50,7 @@ AT+RESET - reset module
 The bluetooth modules should automaticly connected to each other!
 
 ## Installing code to slave bluetooth
-Connect MPU6050, slave bluetooth and battery to Arduino and install slave bluetooth
+Connect MPU6050, slave bluetooth and battery (or USB cable) to Arduino and install slave bluetooth code:
 ```
 sketch_bluetooth_slave.ino
 ```
@@ -69,8 +69,7 @@ Processing_save.pde
 Press space button for start saving to "data.txt" file in your home directory. Press space button to stop saving.
 
 ## Authors
-Gordieiev Artem
-For donation or questions you could write me on email: gordieie.artem@gmail.com
+Gordieiev Artem. For donation or questions you could write me on email: gordieie.artem@gmail.com
 
 Code development with support of [Biocybernetic and aerocosmic medicine department](http://bikam.kiev.ua/) (National aviation university), Ukraine, Kiev.
 And don't forget about authors that made needed libraries:
