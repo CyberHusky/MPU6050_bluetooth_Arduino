@@ -26,26 +26,26 @@ sketch_bluetooth_setup.ino
 3. Make first powering HC-05 and keep the EN button clamped (if you have lucky you wouldn't need to keep button clamped). In right case the diode should begin to flash with a long period.
 4. Go to Arduino port monitor switch sending mode to "NL & CR" for future AT comand. Without if you should need tape "\r\n" command in the end of each AT command.
 5. Send AT comand to HC-05 for programming slave bluetooth:
-AT - to check the connection with Arduino
-AT+DISC - try to disconnect you bluetooth if he was connected
-AT+ORGL - make default setup
-AT+RMAAD - clear saved before pair on bluetooth
-AT+NAME=iArduino - new name of module
-AT+PSWD=7777 - new PIN security code to module
-AT+ROLE=0 - make a slave role mode to module
-AT+ADDR? - try to know address name of device (in my case it was: +ADDR:98d3:36:80efc0). Save this address!
-AT+UART=38400,0,0 - make 38400 speed
+* AT - to check the connection with Arduino
+* AT+DISC - try to disconnect you bluetooth if he was connected
+* AT+ORGL - make default setup
+* AT+RMAAD - clear saved before pair on bluetooth
+* AT+NAME=iArduino - new name of module
+* AT+PSWD=7777 - new PIN security code to module
+* AT+ROLE=0 - make a slave role mode to module
+* AT+ADDR? - try to know address name of device (in my case it was: +ADDR:98d3:36:80efc0). Save this address!
+* AT+UART=38400,0,0 - make 38400 speed
 6. Connect second bluetooth module as before. Send AT comand to HC-05 for programming master bluetooth:
-AT+DISC - try to disconnect you bluetooth if he was connected
-AT+ORGL - make default setup
-AT+RMAAD - clear saved before pair on bluetooth
-AT+BIND=98d3,36,80efc0 - make fix address for connecting to slave bluetooth automaticly
-AT+CMODE=0 - setup module for connec to fix address device
-AT+ROLE=1 - make a master role mode to module
-AT+PSWD=7777 - fixed security PIN for connecting
-AT+UART=38400,0,0 - make 38400 speed
-AT+PAIR=98d3,36,80efc0,5 - initialize pair connection to slave module with 5sec delay
-AT+RESET - reset module
+* AT+DISC - try to disconnect you bluetooth if he was connected
+* AT+ORGL - make default setup
+* AT+RMAAD - clear saved before pair on bluetooth
+* AT+BIND=98d3,36,80efc0 - make fix address for connecting to slave bluetooth automaticly
+* AT+CMODE=0 - setup module for connec to fix address device
+* AT+ROLE=1 - make a master role mode to module
+* AT+PSWD=7777 - fixed security PIN for connecting
+* AT+UART=38400,0,0 - make 38400 speed
+* AT+PAIR=98d3,36,80efc0,5 - initialize pair connection to slave module with 5sec delay
+* AT+RESET - reset module
 
 The bluetooth modules should automaticly connected to each other!
 
