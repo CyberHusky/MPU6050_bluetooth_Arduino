@@ -69,7 +69,7 @@ Processing_save.pde
 Press space button for start saving to "data.txt" file in your home directory. Press space button to stop saving.
 
 ## Authors
-Gordieiev Artem. For donation or questions you could write me on email: gordieie.artem@gmail.com
+Gordieiev Artem. For donation or questions you could write me on email: gordieiev.artem@gmail.com
 
 Code development with support of [Biocybernetic and aerocosmic medicine department](http://bikam.kiev.ua/) (National aviation university), Ukraine, Kiev.
 And don't forget about authors that made needed libraries:
